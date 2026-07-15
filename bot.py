@@ -53,8 +53,8 @@ DEVELOPER_LINK = "https://t.me/ahad018"
 def load_sys_config():
     if not os.path.exists(SYS_CONFIG_FILE):
         default_config = {
-            "official_channel_id": -1003908267643,
-            "official_channel_link": "https://t.me/+vmD8VlOKcTEyNWRl"
+            "official_channel_id": -1004364776705,
+            "official_channel_link": "https://t.me/ahad018"
         }
         with open(SYS_CONFIG_FILE, "w") as f:
             json.dump(default_config, f, indent=4)
@@ -63,7 +63,7 @@ def load_sys_config():
         with open(SYS_CONFIG_FILE, "r") as f:
             return json.load(f)
     except:
-        return {"official_channel_id": -1003908267643, "official_channel_link": "https://t.me/+vmD8VlOKcTEyNWRl"}
+        return {"official_channel_id": -1004364776705, "official_channel_link": "https://t.me/+vmD8VlOKcTEyNWRl"}
 
 def save_sys_config(cfg):
     with open(SYS_CONFIG_FILE, "w") as f:
