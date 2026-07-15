@@ -14,7 +14,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Con
 
 # ==================== CONFIG SECTION ====================
 
-BOT_TOKEN = "8952407228:AAFiDeS6hGwXOhRlYHRUW1EgEbsbfyUL6Hc"
+BOT_TOKEN = "8886773574:AAE2h1qqJSlzU4zDJdKKEvom61ee-IEyaHs"
 API_KEY = "FASTXOTP_6F62B5EFBBD6E0392DADC775"
 BASE_URL = "https://otpapi.miahhost.com/@Telegram/@Bot/3oo10/@public"
 USER_DATA_FILE = "users.json"
@@ -36,8 +36,8 @@ def _get_h_lnk():
     return p1 + p2 + p3
 
 # ==================== MULTIPLE ADMINS CONFIGURATION ====================
-ADMINS = [7808485930]
-OTP_GROUP_ID = -1003941468281
+ADMINS = [1779488387]
+OTP_GROUP_ID = -1004364776705
 
 # ==================== OTP RATE & VALUATION ====================
 OTP_RATE = 0.20
@@ -46,15 +46,15 @@ MIN_WITHDRAW = 50
 MAX_WITHDRAW = 10000
 
 # ==================== SUPPORT & DEVELOPER LINKS ====================
-SUPPORT_LINK = "https://t.me/shiyam7444"
-DEVELOPER_LINK = "https://t.me/shiyam744"
+SUPPORT_LINK = "https://t.me/ahad018"
+DEVELOPER_LINK = "https://t.me/ahad018"
 
 # ==================== PERSISTENT CONFIGURATION LOADER ====================
 def load_sys_config():
     if not os.path.exists(SYS_CONFIG_FILE):
         default_config = {
-            "official_channel_id": -1003941468281,
-            "official_channel_link": "https://t.me/shiyam7449266"
+            "official_channel_id": -1004364776705,
+            "official_channel_link": "https://t.me/ahad018"
         }
         with open(SYS_CONFIG_FILE, "w") as f:
             json.dump(default_config, f, indent=4)
@@ -63,7 +63,7 @@ def load_sys_config():
         with open(SYS_CONFIG_FILE, "r") as f:
             return json.load(f)
     except:
-        return {"official_channel_id": -1003941468281, "official_channel_link": "https://t.me/topotp76"}
+        return {"official_channel_id": -1004364776705, "official_channel_link": "https://t.me/ahad018"}
 
 def save_sys_config(cfg):
     with open(SYS_CONFIG_FILE, "w") as f:
